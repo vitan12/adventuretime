@@ -1,0 +1,249 @@
+{
+  "startingRoom": "TheWoods",
+  "endingRoom": "TheCity",
+  "hungerStatus": [
+    "Your stomach rumbles. It had been days since you had last eaten. Looking across the landscape, game and fruit seemed to be sparse, and water was out of sight.\nThough currently willpower might be enough to hold yourself together, you question how long you might last.",
+    "With each step, your arms and legs seem heavier, your midsection aching as you push yourself forward.\nThough the thoughts of survival keep the hunger at bay, it gnaws on your will with a persistence that could not be ignored.",
+    "As you step forward, you knees buckle underneath you, your strength failing to keep you up as hunger and thirst claw at your mind.\nYou find your vision slowly growing dark as your body tries to conserve what little energy it has left. As the world fades away, you wonder what else you could have done."
+  ],
+  "player": {
+    "items": []
+  },
+  "rooms": [
+    {
+      "name": "TheWoods",
+      "description": "As you step forward, the sunlight washing over you in a deep golden wave, a forest stands in front of you.\nThe dense woodland forms a natural wall from which you wondered how you managed to find your way out of.\nLooking back, the shadows seem to grow with each passing moment, looming closer and closer as the darkness aims to swallow up the world for another night.\nShuddering, you place the wooded barrier to your back and turn to look forward.\nYou see a natural path cut into the grass before you, diverging just a little ways ahead.",
+      "directions": [
+        {
+          "directionName": "East",
+          "directionDescription": "Looking towards the east, you see the dirt and grass turn to pebbles and sand.\nThe smell of the sea washes over you, as do the faint sounds of water. It doesn't seem to be too far off.",
+          "room": "BeachPath",
+          "enabled": "true",
+          "validKeyNames": []
+        },
+        {
+          "directionName": "North",
+          "directionDescription": "As your gaze falls to the North, you see a more defined path, the grass cleared away with intention.\nPerhaps another being had managed to come here before you? Something faint appears on the horizon over the gentle slope of a small hill.",
+          "room": "ForestCabin",
+          "enabled": "true",
+          "validKeyNames": []
+        },
+        {
+          "directionName": "Northeast",
+          "directionDescription": "Looking at the middle of the three paths, you see that it cuts through the rolling landscape.\nWinding between the various small hills, it leads towards a growing set of what could either be defined as a small mountain or a large hill.",
+          "room": "Foothill",
+          "enabled": "true",
+          "validKeyNames": []
+        },
+        {
+          "directionName": "Debug",
+          "directionDescription": "",
+          "room": "Debug",
+          "enabled": "true",
+          "hidden": true,
+          "validKeyNames": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "name": "BeachPath",
+      "description": "Your feet begin to sink into the ground with each step as the dirt turns to sand.\nThough not unusual terrain, the extra effort to walk on the sandy surface of the beach seems to sap at your strength just a little bit more than the hard ground before. You're faced with the ocean in front of you, the gentle lapping of the waves against the beachhead filling the air with a calming white noise. \nSomething glints in the sand at your feet.",
+      "directions": [
+        {
+          "directionName": "West",
+          "directionDescription": "Looking back from where you came, you can see the forest in the distance, the small trail that your shoes had left in the sand visible against the golden sun. ",
+          "room": "TheWoods",
+          "enabled": "true",
+          "validKeyNames": []
+        },
+        {
+          "directionName": "East",
+          "directionDescription": "Looking ahead, you see a small shack in the distance. It appears small against the rolling yellow white sand dunes, but prominent. It doesn't seem too far away, perhaps you should check out what's there?",
+          "room": "BeachShack",
+          "enabled": "true",
+          "validKeyNames": []
+        }
+      ],
+      "items": [
+        {
+          "itemName": "Shiny Object",
+          "inventoryName": "Key",
+          "toBePrinted": false,
+          "edible": false,
+          "description": "The shine in the sand catches your eyes.\nYou crouch down to pick it up. As your hand brushes against the surface, you feel the metal shape of what appears to be a key! The sand falls away revealing a rusted key, scarred by the salty air and the water."
+        }
+      ]
+    },
+    {
+      "name": "BeachShack",
+      "description": "With each step, your muscles began to cramp as you approach the wooden shack. The sand was not kind to your weary body. Taking a breath, your eyes begin to take in the scene.\n A deep blue ocean sat under a pink sky, the golden orb of the sun hanging low in the air as it worked its way down the sky. Sand was piled up against the shack, the windows cracked and the color of the wood faded with time. \nWalking up front, the door seemed to be left open, a dusty, dirty home with nothing of value was revealed.",
+      "directions": [
+        {
+          "directionName": "West",
+          "directionDescription": "With malice, you look back at where you came from, the forest now blurred by the fog of distance. Your legs cramp up as you think about the walk you would have to take to go back to that dirty path.",
+          "room": "BeachPath",
+          "enabled": "true",
+          "validKeyNames": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "name": "ForestCabin",
+      "description": "As you step over the hill, a house reveals itself to you. A nice dark wood frames the home, a picturesque hut with the sun shining on the felled timber. The area around it had the marks of being maintained but since overgrown. As you approach the cabin, you see pieces of felled lumber stacked up beside it and spent coals in a pit beside a spit roast. Standing in front of it presents you with a door, a thick metal padlock worn and rusted by the passage of time denying you entry to what might be inside.",
+      "directions": [
+        {
+          "directionName": "Cabin",
+          "directionDescription": "Looking through the window of the cabin, you can vaguely make out some basic shapes. The glass isn't very conducive to peeping.",
+          "room": "FoodRoom",
+          "enabled": "false",
+          "validKeyNames": [
+            "shiny object"
+          ]
+        },
+        {
+          "directionName": "South",
+          "directionDescription": "Looking behind you, you see the forest curve off and the water faintly twinkle on the horizon. The faint rays of light of the quickly ending day highlight a scene that would be enjoyable to just sit and watch had you not been on the brink of starvation.",
+          "room": "TheWoods",
+          "enabled":"true",
+          "validKeyNames": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "name": "FoodRoom",
+      "description": "Entering the cabin presents you with an interior devoid of much of anything. A worn axe laid off to the side, chipped and broken.\nIt seemed to be abandoned for all you could tell. Looking at the table, you're presented with a worn photo of a family with faded faces. Suddenly, the sharp smell of meat hits your nose. Turning back, behind the door, you see a cooked slab of meat. It seems tantalizing, the aroma overpowering.",
+      "directions": [
+        {
+          "directionName": "Outside",
+          "directionDescription": "It's outside. You look out the door to see where you just came in from. Nothing new, other than the sun slightly lower than where it was, the gold rays dimming as time marched forward.",
+          "room": "ForestCabin",
+          "enabled": "true",
+          "validKeyNames":[]
+        }
+      ],
+      "items": [
+        {
+          "itemName": "Meat",
+          "inventoryName": "Slice of meat",
+          "toBePrinted": true,
+          "edible": true,
+          "eatingInformation": "As you look at the meat, your hunger seems to command your movements as you hungrily devour it.\nNot caring much for etiquette or hygiene, it disappears in chunks as you tear off bit by bit and refuel your malnourished body.",
+          "description": "Picking up the slice of meat, you can feel it was still warm.\nYour hands slightly dirty the item, but it still remained good to eat as you stow away the slice of meat inside your bag."
+        }
+      ]
+    },
+    {
+      "name": "Foothill",
+      "description": "Walking in between the rolling hills, you find your legs growing tired with each step. The sun hangs low in the sky, shining golden rays on your face as you step forward.\nAs the path grows steeper, you find yourself on the base of a small summit, looking up at a rocky hill. The pink sky casts long shadows behind you, the true task of what lies ahead hitting you with another wave of exhaustion. ",
+      "directions": [
+        {
+          "directionName": "Southwest",
+          "directionDescription": "Looking back from where you came, you see the gradual increases in elevation had lead to a rather nice view of the land below.\nThough not too high up, you can see over the tops of the trees, and a rolling sky overhead tinged with purple.",
+          "room": "TheWoods",
+          "enabled": "true",
+          "validKeyNames": []
+        },
+        {
+          "directionName": "Northeast",
+          "directionDescription": "Looking ahead, the true scale of the mountains finally hits. you. Your legs threaten to give way as your weary eyes scale up what would lay ahead if you were to continue down this path.\nYou wonder if you're even up for it, as week as you are right now. Well, no time like the present to test out your limits!",
+          "room": "MountainPass",
+          "enabled": "true",
+          "validKeyNames": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "name": "MountainPass",
+      "description": "The dirt and gravel under your feet turn to hard rock as your paining feet find purchase among the various stones.\nVery methodically, you slowly climb up the mountain, moving each limb one at a time with a sort of deliberate action. Not only did this let you recuperate after each bit, but also made sure your footing stayed true. ",
+      "directions": [
+        {
+          "directionName": "Left",
+          "directionDescription": "Looking left, you see a path over the peak of the cliff face,\nIt disappears behind a set of large rocks that you can't look past, pick highlighting the sparking minerals embedded within. ",
+          "room": "TheFall",
+          "enabled": "true",
+          "validKeyNames": []
+        },
+        {
+          "directionName": "Right",
+          "directionDescription":"The right hosts a path much more sketchy than the left.\nThough still defined, more loose rocks were scattered about, and it seemed to follow the edge of the little mountain before dipping over to the other side. ",
+          "room": "PathToCity",
+          "enabled": "true",
+          "validKeyNames": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "name": "TheFall",
+      "description": "As you climb up the left side of the mountain, you find yourself at the top. Looking down at your hands, red, but not bloodied, you wonder how you managed to make it.\nTaking a deep breath, you prepare yourself to work back down the face of the mountain. As you step down, you find that the rock under your foot gives way! You tumble downwards, hiting your back and your legs.\nDo you try to go towards the left or right?",
+      "directions": [
+        {
+          "directionName": "Left",
+          "directionDescription": "You're going too fast, you can't tell what's ahead! What are you going to do?",
+          "room": "Death",
+          "enabled": "true",
+          "validKeyNames": []
+        },
+        {
+          "directionName": "Right",
+          "directionDescription":"You're going too fast, you can't tell what's ahead! What are you going to do?",
+          "room": "PathToCity",
+          "enabled": "true",
+          "validKeyNames": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "name": "Death",
+      "description": "As you try to curl yourself up and shift your weight to the left, you feel a snaking branch crack against your back, forcing you open.\nA rock hits your head, and you fall limp to the ground as your livelihood is drained fromn your body. Weak from hunger, you could do nothing but lay there as your senses slowly leave you, darkness washing over the landscape as you draw your final breath.",
+      "directions": [],
+      "items": []
+    },
+    {
+      "name": "PathToCity",
+      "description": "As you work your way down the mountain, the brunt of what could have happened passed.\nYou feel your leg, paining but manageable as you hobble along towards a dark silhouette in the foreground. With each step, you find renewed energy knowing that civilization was near, and that your ordeal was soon to end. With slow deliberate steps, you walk down the path towards the city.",
+      "directions": [
+        {
+          "directionName": "Southwest",
+          "directionDescription": "You look back towards the mountain. It looms over you, the sun illuminating the face as you wonder how you managed to even overcome it. Shaking your head, you think it best to move on and not go back.",
+          "room": "MountainPass",
+          "enabled": "false",
+          "validKeyNames": []
+        },
+        {
+          "directionName": "Northeast",
+          "directionDescription":"The city lays ahead, still lit in the last hours of daylight. You figure you should go as fast as possible to tend to any sort of injuries you may have on your person.",
+          "room": "TheCity",
+          "enabled": "true",
+          "validKeyNames": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "name": "TheCity",
+      "description": "You find yourself entering the city just as the first street lamps were flickering on. With the sun now firmly below the horizon, you see the purple of night overtake the sky rapidly.\nGasping a sigh of relief, the shadows of buildings, and the flickering of fires indoors all provide a sense of security as you see people once more, bustling around you.\nThe scents and sounds of civilization were overwhelming as you hobble down the cobblestone streets, but reassuring.\nYou're home.",
+      "directions": [],
+      "items": []
+    },
+    {
+      "name": "Debug",
+      "description": "Walking back into the forest, you find that around you, there was nothing but a bright white.\nThe floor appears underneath you with each step as you see an item hovering in the middle.",
+      "directions": [],
+      "items": [
+        {
+          "itemName": "Teleporter",
+          "inventoryName": "debugTeleporter",
+          "toBePrinted": true,
+          "edible": false,
+          "description": "As you look at the item before you, it glows pink and black. You know it's not supposed to exist, yet somehow it seems right as it magnetically sticks to your hand. Congrats, you're now in debug mode."
+        }
+      ]
+    }
+  ]
+}
